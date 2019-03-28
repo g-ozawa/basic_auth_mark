@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.name          = "basic_auth_mark"
   spec.version       = BasicAuthMark::VERSION
   spec.authors       = ["kazuki ozawa"]
-  spec.email         = ["ozawa@example.com"]
+  spec.email         = ["kazuki.ozawa@outlook.jp"]
 
   spec.summary       = %q{BASIC AUTH DETECTOR.}
   spec.description   = %q{BASIC AUTH DETECTOR.}
