@@ -5,5 +5,12 @@ module BasicAuthMark
     initializer "basic_auth_mark.insert_middleware" do |app|
       app.config.middleware.use(BasicAuthMark::Middleware)
     end
+
+    config.basic_auth_mark = ActiveSupport::OrderedOptions.new
+
+    config.after_initialize do
+      options = config.basic_auth_mark
+      BasicAuthMark.position = options.position if options.position
+    end
   end
 end

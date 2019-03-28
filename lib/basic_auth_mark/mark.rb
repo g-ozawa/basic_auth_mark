@@ -7,7 +7,7 @@ module BasicAuthMark
     end
 
     def insert_into(html)
-      position = @options[:position] || 'right-top'
+      position = BasicAuthMark.position
 
       style_tag_str = <<-EOS
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.2/gh-fork-ribbon.min.css" />
