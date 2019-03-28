@@ -4,8 +4,6 @@ module BasicAuthMark
 
     def initialize(app)
       @app = app
-
-      @themes = [BasicAuthMark::Theme::GithubForkRibbon.new]
     end
 
     def call(env)
@@ -35,9 +33,8 @@ module BasicAuthMark
     private
 
     def insert_basic_auth_marks(body)
-      @themes.each do |theme|
-        body = theme.insert_into(body)
-      end
+      mark = BasicAuthMark::Mark.new
+      body = mark.insert_into(body)
       body
     end
   end
