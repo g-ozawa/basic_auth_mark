@@ -2,8 +2,7 @@
 
 module BasicAuthMark
   class Mark
-    def initialize(options = {})
-      @options = options
+    def initialize
     end
 
     def insert_into(html)
