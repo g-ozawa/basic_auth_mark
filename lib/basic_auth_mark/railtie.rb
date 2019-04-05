@@ -11,6 +11,7 @@ module BasicAuthMark
     config.after_initialize do
       options = config.basic_auth_mark
       BasicAuthMark.position = options.position if options.position
+      BasicAuthMark.color = options.color if options.color
     end
   end
 end

@@ -13,5 +13,13 @@ module BasicAuthMark
     def position=(position)
       @position = position
     end
+
+    def color
+      @color ||= '880000'
+    end
+
+    def color=(color)
+      @color = color
+    end
   end
 end

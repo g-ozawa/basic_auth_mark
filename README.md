@@ -11,14 +11,15 @@ gem "basic_auth_mark"
 ```
 
 ## Configuring
-### Change ribbon position
-#### Rails app
+### Rails app
 In `config/environments/#{environment}.rb`
 
 ```ruby
 Rails.application.configure do
-  # ...
+  # change ribbon position(default:right-top)
   config.basic_auth_mark.position = 'left-bottom' # left-top/right-top/left-bottom/right-bottom
+  # change color(default: 880000)
+  config.basic_auth_mark.color = '0000aa'
 end
 ```
 

@@ -7,9 +7,11 @@ module BasicAuthMark
 
     def insert_into(html)
       position = BasicAuthMark.position
+      color = BasicAuthMark.color
 
       style_tag_str = <<-EOS
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.2/gh-fork-ribbon.min.css" />
+<style>.github-fork-ribbon:before { background-color: ##{color};}</style>
       EOS
 
       div_tag_str = <<-EOS
