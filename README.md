@@ -1,17 +1,18 @@
 # BasicAuthMark
-Show Github Ribbon when you use Basic Authenticaiton.
+Check whether HTTP Basic authentication is enabled or not.
+if basic authenticaiton is enabled, show github ribbon on your page.
 
 ## Installation
 
-### Rails App
+### Rails app
 All you have to do is to include the Gem
 ```ruby
 gem "basic_auth_mark"
 ```
 
 ## Configuring
-### Change Ribbon Position
-#### Rails App
+### Change ribbon position
+#### Rails app
 In `config/environments/#{environment}.rb`
 
 ```ruby
