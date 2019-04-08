@@ -12,6 +12,7 @@ module BasicAuthMark
       options = config.basic_auth_mark
       BasicAuthMark.position = options.position if options.position
       BasicAuthMark.color = options.color if options.color
+      BasicAuthMark.markable_ip_addresses = options.markable_ip_addresses if options.markable_ip_addresses
     end
   end
 end

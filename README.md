@@ -20,6 +20,8 @@ Rails.application.configure do
   config.basic_auth_mark.position = 'left-bottom' # left-top/right-top/left-bottom/right-bottom
   # change color(default: 880000)
   config.basic_auth_mark.color = '0000aa'
+  # change markable ip addresses(default: all ip addresses)
+  config.basic_auth_mark.markable_ip_addresses = ['127.0.0.1']
 end
 ```
 

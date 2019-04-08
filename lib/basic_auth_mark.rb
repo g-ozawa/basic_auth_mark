@@ -21,5 +21,17 @@ module BasicAuthMark
     def color=(color)
       @color = color
     end
+
+    def markable_ip_addresses
+      @markable_ip_addresses ||= []
+    end
+
+    def markable_ip_addresses=(markable_ip_addresses)
+      if markable_ip_addresses.is_a?(Array)
+        @markable_ip_addresses = markable_ip_addresses
+      else
+        @markable_ip_addresses = [markable_ip_addresses]
+      end
+    end
   end
 end
