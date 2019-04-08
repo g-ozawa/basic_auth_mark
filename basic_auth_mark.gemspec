@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["kazuki ozawa"]
   spec.email         = ["kazuki.ozawa@outlook.jp"]
 
-  spec.summary       = %q{Check Whether HTTP Basic Authentication is enabled or not.}
-  spec.description   = %q{Check Whether HTTP Basic Authentication is enabled or not.}
+  spec.summary       = %q{Show ribbon mark if basic authenticaiton is enabled.}
+  spec.description   = %q{Show ribbon mark if basic authenticaiton is enabled.}
   spec.homepage      = 'https://github.com/g-ozawa/basic_auth_mark'
   spec.license       = "MIT"
 
